@@ -1,0 +1,191 @@
+.hide-xs {
+  display: none !important;
+}
+.xl-container1,
+.xl-container {
+  @media screen and (min-width: 1400px) {
+    padding-right: 10%;
+  }
+  @media screen and (min-width: 1500px) {
+    max-width: 1200px;
+    padding-right: 0;
+  }
+}
+.xs-block {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.lg-block {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.img-auto {
+  width: auto;
+}
+.padding-top-none {
+  padding-top: 0 !important;
+}
+.padding-top-none-xs {
+  @media screen and (max-width: 767px) {
+    padding-top: 0 !important;
+  }
+}
+.material-icons-round {
+  font-family: "Material Icons Round" !important;
+  font-weight: normal;
+}
+.main-container {
+  padding-top: 70px !important;
+  min-height: 100vh;
+  @media screen and (max-width: 767px) {
+    padding: 54px 10px !important;
+  }
+  @media only screen and (max-width: 1200px) and (min-width: 768px) {
+    padding: 54px 16px !important;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+.fl-remove fieldset {
+  top: 0;
+}
+button:disabled {
+  opacity: 0.3 !important;
+  cursor: default;
+}
+.normal-text {
+  font-family: $Narin-Regular !important;
+  font-size: 16px !important;
+  color: #000 !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  @media screen and (max-width: 767px) {
+    font-size: 14px !important;
+  }
+}
+.formlabel span,
+.formlabel {
+  font-family: $Narin-Regular !important;
+  font-size: 16px !important;
+  color: #000 !important;
+  font-weight: 500 !important;
+  padding-bottom: 5px !important;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  overflow: inherit !important;
+  min-height: 22px;
+  @media screen and (max-width: 1200px) {
+    font-size: 14px !important;
+  }
+}
+.formlabel span {
+  padding-bottom: 3px;
+}
+.form-select,
+.forminput input,
+.forminput {
+  width: 100%;
+  border-color: #cfcfcf;
+  border-radius: 8px;
+  min-height: 40px;
+  background: #fff !important;
+  font-size: 16px;
+  padding: 3px 8px;
+  line-height: 24px;
+  font-family: $Narin-Regular !important;
+  &.css-b62m3t-container {
+    padding: 3px 0;
+  }
+  &.error {
+    fieldset {
+      border-color: red;
+    }
+  }
+  &:disabled {
+    background-color: #f3f3f3ee !important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.6);
+  }
+}
+textarea {
+  &:focus {
+    outline: 2px solid #3169e7;
+    outline-offset: -2px;
+    border-color: #cfcfcf;
+  }
+}
+.forminput legend {
+  line-height: 9px;
+}
+.form-select {
+  min-height: 44px !important;
+}
+.MuiMenu-paper .MuiMenu-list {
+  display: grid;
+  li {
+    justify-content: flex-start;
+    padding: 8px 0 8px 10px;
+    border-bottom: 1px solid #e9e9eb;
+    font-family: $Narin-Regular !important;
+    overflow: hidden;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    a p img {
+      padding-right: 8px;
+    }
+  }
+}
+.search-input {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  .search-icon {
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    z-index: 1;
+  }
+  input {
+    padding: 4px 8px 2px 38px !important;
+  }
+}
+.menu-main {
+  width: 200px;
+  padding: 12px 10px 10px 6px;
+  .MuiMenu-paper {
+    background: transparent !important;
+    box-shadow: none !important;
+    max-width: calc(100% - 25px);
+  }
+  ul {
+    background: #fff;
+    padding: 14px 0;
+    border-radius: 10px;
+    box-shadow: 0rem 0.625rem 0.9375rem -0.1875rem rgba(0, 0, 0, 0.1),
+      0rem 0.25rem 0.375rem -0.125rem rgba(0, 0, 0, 0.05);
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      position: absolute;
+      left: 40px;
+      top: -7px;
+      z-index: 9;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    li {
+      border-radius: 0;
+      color: #282b3b;
+      padding: 8px 10px;
+      justify-content: flex-start;
+    }
+  }
+}

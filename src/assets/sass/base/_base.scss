@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: #fff;
+  scroll-behavior: smooth;
+  font-family: $Narin-Regular !important;
+}
+body, .main-container{
+  overflow-x: hidden;
+}
+
+body, button {
+  font-family: $Narin-Regular;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: "Narin-Regular" !important;
+  color: #282B3B;
+}
+ label, span{
+  font-family: "Narin-Regular" !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+button{
+  text-transform: capitalize !important;
+}
+.css-nkchhw {
+  @media screen and (max-width: 767px) {
+      padding: 0 !important;
+  }
+}
+
+
+
+
+
+
+/* for mobile */
+
+@media only screen and (max-width: 767px) {
+ 
+}
+@media (min-width: 767px) and (max-width: 991px) {
+
+}
