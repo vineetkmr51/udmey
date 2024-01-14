@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,6 +8,7 @@ import {
 import Header from './components/Header.js';
 import MainPage from './pages/landing';
 import Error from "./pages/error/index.js";
+import List from "./pages/listItem/index.js";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
        
         <Routes>
           <Route exact path="/" Component={MainPage}/>
-
+          <Route exact path="/list" Component={List}/>
           
           <Route exact path="*" Component={Error}/>
         </Routes>
