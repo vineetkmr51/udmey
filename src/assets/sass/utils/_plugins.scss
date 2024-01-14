@@ -11,7 +11,7 @@
         &:after {
             content: "";
             overflow: inherit !important;
-            background: url("../../images/icons/checkbox-fill.png") no-repeat;
+            // background: url("../../images/icons/checkbox-fill.png") no-repeat;
             width: 20px;
             height: 20px;
             background-size: 100%;
@@ -42,7 +42,7 @@
         :before {
             content: "";
             overflow: inherit;
-            background: url("../../images/icons/checkbox.png") no-repeat;
+            // background: url("../../images/icons/checkbox.png") no-repeat;
             width: 20px;
             height: 20px;
             background-size: 100%;
@@ -220,7 +220,7 @@
         }
         span:before {
             content: "";
-            background: url("../../images/icons/radio-bg.png") no-repeat;
+            // background: url("../../images/icons/radio-bg.png") no-repeat;
             width: 20px;
             height: 20px;
             background-size: 100%;
@@ -293,7 +293,7 @@
     &.icon {
         .form-select:after {
             content: "";
-            background: url("../../images/icons/down-arrow.png") no-repeat;
+            // background: url("../../images/icons/down-arrow.png") no-repeat;
             width: 18px;
             height: 9px;
             content: "";

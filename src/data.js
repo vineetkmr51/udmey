@@ -1,7 +1,7 @@
-import componentsImg from '../src/assets/components.png';
-import propsImg from '../src/assets/config.png';
-import jsxImg from '../src/assets/jsx-ui.png';
-import stateImg from '../src/assets/state-mgmt.png';
+import componentsImg from '../src/assets/images/components.png';
+import propsImg from '../src/assets/images/config.png';
+import jsxImg from '../src/assets/images/jsx-ui.png';
+import stateImg from '../src/assets/images/state-mgmt.png';
 
 export const Core_Concept = [
   {
