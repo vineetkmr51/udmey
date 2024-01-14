@@ -1,15 +1,28 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from 'react';
 function List() {
-  useEffect(()=>{
-    fetch("https://jsonlaceholder.typicode.com/todos")
-    .then((response) => response)
-    .then((e)=> e.json)
-    .then(e=>console.log(e));
-  },[]);
+
+  const[test, setTest] = useState([{name:"default"}])
+  useEffect(() => {
+    apifunc()
+  }, [])
+
+  async function apifunc(){
+      let apiData = await fetch('https://jsonplaceholder.typicode.com/users')
+      let apijson = await apiData.json()
+      setTest(apijson)
+  }
   return (
     <div>
       
-     
+      {
+        test.map((item) => {
+          return(
+            <div>
+              {item.name}
+            </div>
+          )
+        })
+      }
 
 
 
